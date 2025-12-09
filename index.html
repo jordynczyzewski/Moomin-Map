@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title></title>
+
+        <!--put your external stylesheet links here-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--[if IE<9]>
+            <link rel="stylesheet" href="css/style.ie.css">
+        <![endif]-->
+        
+        <!--you can also place internal styles here
+        place these within <style> tags-->  
+        
+    </head>
+    
+
+    <body>
+        <!--put your initial page content here-->
+        
+        <!--you can also use this space for internal scripts;
+        place these within <script> tags-->
+
+        <!--put your external script links here-->
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Moomin World</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Scrollmap and Bootstrap -->
+    <link rel="stylesheet" href="./lib/scrollmap.css">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+
+    <!-- Your custom stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <!-- New fonts you added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body class="hammersmith-one-regular">
+<div class="content">
+
+    <!-- TITLE BLOCK -->
+    <!-- Background image should be a wide title card with Moomin art and map snippet -->
+    <div class="row" style="background-image:url(assets/Helsinki\ Metro\ Area\ Moomin\ Map\ Screenshot.png); background-size:contain;">
+        <div class="center title">
+            <h1>Moomin World</h1>
+            <p class="author">Jordyn Czyzewski</p>
+        </div>
+    </div>
+    
+
+    <!-- INTRO TEXT -->
+
+    <div class="row">
+        <div class="center">
+            <p class="big-intro">This style, called <b>Moomin World</b>, turns comic illustrations of Moomin and friends into a multiscale
+                basemap. 
+                <p>The Moomin comics were created in the mid-twentieth century by Finnish artist and writer Tove Jansson.</p> 
+                <img class="fit" src="assets/moomin-comic-book-covers-1-10.jpeg" >
+                </p>
+                The stories follow a gentle troll family and their friends as 
+                they navigate outdoor adventures in the changing Nordic landscape. 
+                <p>Rooted 
+                deeply in Finnish culture, the comics draw on the region’s forests, coastlines, and folklore, which gives 
+                the Moomin world its unmistakable sense of place. </p>
+                
+                </p> The comics are a distinct part of the larger Moomin 
+                franchise, which also includes novels and animated series, which have helped make the Moomins one of Finland’s most recognizable cultural icons.</p>
+                
+                </p>
+            </p>
+        </div>
+    </div>
+
+    <!-- INSPIRATION BOARD + SPEC SHEET -->
+    <div class="row">
+        <div class="center">
+            </p>
+            <p>
+                My map aligns thematically with the adventures of Moomin world, focusing on natural outdoor features and paths opposed to building structures and city forms, to align with the story. 
+                <p>Inspiration to create elements within this Moomin-styled map came from four pillars of the style: <b>Form, Color, Type, and Texture</b>, all of which helped translate the charm of Tove Janssons' illustrations into a functional and playful cartographic design.</p>
+
+        <div class="center"></div>
+            <img class="fit" src="assets/Moomin Comic inspiration Image.png" >
+
+                <b>Form:</b> I wanted to focus on rounded shapes and feelings of mixed hand drawn textures, integrating a soft feel and playful linework.
+            <p>
+            <img class="fit" src="assets/Moomin Comic Inspiration 2 Image .png">
+                <b>Color: </b> Colors of this fantasy world include dark green vegetation and golden yellow roads, contrasting hues blend together for a whimsical feel. Dotted moss green land cover aim to feel like a page pulled
+                from a Moomin comic book immersing the viewer into the story.
+            <div class="row">
+        <!-- INSPIRATION BOARD + SPEC SHEET -->
+    <div class="row">
+    <div class="center">
+
+        <!-- TYPE EXAMPLE 1 -->
+        <img class="fit" src="assets/Moomin Script Inspiration Font .png" 
+             alt="Blocky uppercase letters inspired by the Moomin font">
+
+        <!-- TYPE EXAMPLE 2 -->
+        <img class="fit" src="assets/Tove Script Inspiration Font png.png" 
+             alt="A font mimicking Tove Jansson's handwriting"> 
+
+        <p><b>Type:</b> I took inspiration from the blocky, uppercase letters of the uniquely designed Moomin font along with the eloquent handwritten script by Jansson to integrate into labels.</p>
+
+        <!-- TEXTURE EXAMPLE -->
+        <img class="fit" src="assets/Moomin Water Inspiration Photo.png" 
+             alt="Textured water pattern from Moomin art">
+
+        <p><b>Texture:</b> Dense linework for teal and blue oceans adding a sketch-like feel and bold contrasting hues were used for bodies of water, inspired by this Moomin comic image. </p> 
+    </div>
+</div>
+
+    <!-- SIDE BY SIDE: MOOMIN SYMBOLS IN HELSINKI -->
+    <div class="row">
+        <div class="left">
+            <p class="vert-center">
+                Moomin faces mark populated areas. Larger-sized Moomins represent bigger cities,
+                while smaller ones note less dense settlements. White circles around the Moomin echo comic speech bubbles
+                and keep the icons visible above dense forests and textured water.
+            </p>
+        </div>
+        <div class="right">
+            <img class="fit" src="img/New York Moomin Icon Inspiration Image.png" alt="Moomin faces representing cities in Helsinki neighborhoods">
+        </div>
+    </div>
+
+    <!-- SLIDESHOW: ONE AREA AT MULTIPLE SCALES (DECAY AS YOU ZOOM IN) -->
+    <!-- Pick any area you like; here the captions assume a progression around Madison or Helsinki -->
+    <div class="row">
+        <div class="center-wide">
+            <p><b>The map changes and develops more detail as you zoom in.</b></p>
+
+            <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/Global Overview Moomin Map Screenshot.png" class="w-100" alt="Global overview">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>At the broadest global scale, teal seas and dark continents carry almost all of the visual weight.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/Northern Europe Moomin Map Screenshot.png" class="w-100" alt="Northern Europe">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Moving in to the overview of Northern Europe, coastlines and fjords start to show the sketchy ocean texture.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/South of Finland North of Estonia Moomin Map Screenshot.png" class="w-100" alt="South of Finland and North of Estonia">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>The Helsinki region reveals stippled forests, rounded land use patches, and warm yellow main roads.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/Wisconsin Moomin Map Screenshot.png" class="w-100" alt="Wisconsin regional view">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Regional views like Wisconsin balance dense forests, lakes, and Moomin city markers.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/City of Madison Moomin Map Screenshot.png" class="w-100" alt="Madison city view">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Zooming all the way in, individual streets, parks, and shorelines break into detailed linework.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="prev-button" class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button id="next-button" class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCROLLMAP SIDECAR: TOUR FROM GLOBAL TO MADISON, PLUS OTHER PLACES -->
+    <!-- SCROLLMAP SIDECAR 1: GLOBAL TO HELSINKI NEIGHBORHOODS -->
+    <div class="scroll-container">
+
+        <!-- BACKGROUND IMAGES PART 1 -->
+        <div class="background-item">
+            <!-- 0: Global -->
+            <img src="assets/Global Overview Moomin Map Screenshot.png" data-slide="0" class="fill vert-center">
+            <!-- 1: Northern Europe -->
+            <img src="assets/Northern Europe Moomin Map Screenshot.png" data-slide="1" class="fill vert-center hidden">
+            <!-- 1: Finland slash Estonia -->
+             <img src="assets/South of Finland North of Estonia Moomin Map Screenshot.png" data-slide="2" class="fill vert-center hidden">
+            <!-- 2: Helsinki metro -->
+            <img src="assets/Helsinki Metro Area Moomin Map Screenshot.png" data-slide="3" class="fill vert-center hidden">
+            <!-- 3: Helsinki neighborhoods -->
+            <img src="assets/City of Helsinki Neighborhoods.png" data-slide="4" class="fill vert-center hidden">
+        </div>
+
+        <!-- FOREGROUND TEXT PART 1 -->
+        <div class="foreground-item no-event">
+
+            <div class="row">
+                <div class="center background-transparent rounded">
+                    <p class="no-margin">
+                        We start at the scale of the whole world. Oceans dominate the frame, filled with light aqua
+                        strokes that mimic ink hatching in the original Moomin illustrations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center background-transparent rounded">
+                    <p class="no-margin">
+                        Moving in to Northern Europe, the palette focuses on teal seas and deep forests,
+                        situating the Moomin world around the Nordic coastline.
+                    </p>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="center background-transparent rounded">
+                    <p class="no-margin">
+                        Looking closer into Southern Finland and Northern Estonia, country and water labeling along with city icon size varies at a closer scale.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center background-transparent rounded">
+                    <p class="no-margin">
+                        At the Helsinki metro scale, islands, peninsulas, and forests share space with a golden road
+                        network. The warm roads echo printed ink lines on top of flat color plates.
+                    </p>
+                </div>
+            </div>
+            
+
+            <div class="row">
+                <div class="center background-transparent rounded">
+                    <p class="no-margin">
+                        Inside central neighborhoods, stippled land cover, yellow roads, and location names
+                        carry most of the detail. 
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end foreground-item part 1 -->
+    </div> <!-- end scroll-container part 1 -->
+
+
+    <!-- BREAK SECTION: plain text, no scrollmap background -->
+    <div class="row break-section">
+        <div class="center">
+            <p class="break-text">
+                Now that we have looked at the changes across scales, 
+                let's view how varied geographies impact the map display.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- SCROLLMAP SIDECAR 2: ICELAND, US, KEYSTONE, WISCONSIN, MADISON -->
+    <div class="scroll-container">
+
+        <!-- BACKGROUND IMAGES PART 2 -->
+        <div class="background-item">
+            <!-- 0: Iceland glaciated -->
+            <img src="assets/Glaciated Region of Iceland Moomin Map Screenshot.png" data-slide="0" class="fill vert-center">
+            <!-- 1: United States overview -->
+            <img src="assets/United States Moomin Map Screenshot.png" data-slide="1" class="fill vert-center hidden">
+            <!-- 2: Keystone Colorado -->
+            <img src="assets/Keystone, Colorado Mountain Ski Area Moomin Map Screenshot.png" data-slide="2" class="fill vert-center hidden">
+            <!-- 3: Wisconsin regional -->
+            <img src="assets/Wisconsin Moomin Map Screenshot.png" data-slide="3" class="fill vert-center hidden">
+            <!-- 4: Madison close view -->
+            <img src="assets/City of Madison Moomin Map Screenshot.png" data-slide="4" class="fill vert-center hidden">
+        </div>
+
+        <!-- FOREGROUND TEXT PART 2 -->
+        <div class="foreground-item no-event">
+
+            <div class="row">
+                <div class="center background-transparent rounded">
+                    <p class="no-margin">
+                        The glaciated region of northern Iceland shows how the terrain style works. Sketchy hillshade
+                        strokes follow valleys and ridges, giving the mountains a carved, storybook feel.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center background-transparent rounded">
+                    <p class="no-margin">
+                        Across the United States, teal lakes, dark forests, and pale stippling hold the style together
+                        at continental scale while Moomin icons pick out key cities.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center background-transparent rounded">
+                    <p class="no-margin">
+                        Keystone, Colorado reveals the varied terrain hues on alpine slopes. Forest dots and hillshade
+                        lines wrap around the ski runs and village without losing legibility.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center background-transparent rounded">
+                    <p class="no-margin">
+                        A view of Wisconsin demonstrates state-level features, with county and state boundaries 
+                        defined along with prominent cities. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center background-transparent rounded">
+                    <p class="no-margin">
+                        Finally, the tour ends in central Madison, demonstrating what the campus and downtown area might look like 
+                        in Moomin style, with plenty of land cover for the characters to run around and have 
+                        fun outdoor adventures by the lakes.
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end foreground-item part 2 -->
+    </div> <!-- end scroll-container part 2 -->
+
+
+<!-- MAPBOX IFRAME -->
+<div class="row sm-margin iframe-row">
+  <div class="iframe-wrapper">
+    <p><b>Explore the full interactive Moomin World basemap.</b></p>
+
+    <iframe
+      src="https://api.mapbox.com/styles/v1/jczyzewski/cmhmytwt6008x01qf6e4n3mch.html?title=view&access_token=pk.eyJ1IjoiamN6eXpld3NraSIsImEiOiJjbWdremg4Nm8wMnI5MmpxMnFvYm1jemNyIn0.Ws_JaqbWl_u-UkfnEzHhrw&zoomwheel=true&fresh=true#1.01/22.9/-99.4"
+      title="Moomin Map World"
+      width="700"
+      height="600"
+      class="moomin-iframe"
+      style="border:none;">
+    </iframe>
+  </div>
+</div>
+
+
+
+  </div>
+</div>
+
+
+    <!-- CREDITS -->
+    <div class="row no-margin">
+        <div class="center">
+            <div class="credits">
+                <hr>
+                <p><b>Credits</b></p>
+                <p>Style and explainer created in Mapbox Studio and Scrollmap for GEOG 572.</p>
+                <p>Base data from OpenStreetMap contributors.</p>
+                <p>Moomin characters © Moomin Characters Oy Ltd. Used here only as stylistic inspiration.</p>
+                <p>Design and implementation by Jordyn Czyzewski.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Scrollmap and Bootstrap scripts -->
+<script type="text/javascript" src="./lib/scrollmap.js"></script>
+<script type="text/javascript" src="./lib/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,470 @@
+/* Title container */
+.title {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+/* Bubble backgrounds */
+.title h1,
+.title .author {
+  display: inline-block;
+  background: #ffffff;
+  padding: 0.4rem 1.6rem;
+  border-radius: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.20);
+}
+
+/* Title font styling */
+.title h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: #222;
+  margin-bottom: 0.6rem;
+}
+
+/* Big intro paragraph under title */
+.big-intro {
+  font-size: 2rem;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+/* Author bubble */
+.title .author {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Entire page background in soft Moomin yellow */
+body {
+  background-color: #E8DFA4;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make scrollmap text look clean on yellow */
+p, h1, h2, h3, .author {
+  color: #2B2A28; /* soft charcoal */
+}
+
+/* General centering of content blocks */
+.center,
+.center-wide {
+  text-align: center;
+  margin: 0 auto;        /* horizontal centering */
+  max-width: 900px;      /* nice readable width */
+}
+
+/* Wider blocks for slideshow and iframe */
+.center-wide {
+  max-width: 1100px;
+}
+
+/* Optional: soften white text boxes */
+.background-transparent {
+    background-color: rgba(255,255,255,0.93);
+    padding: 20px;
+}
+
+
+/* Optional: rounded corners on scroll text */
+.rounded {
+  border-radius: 12px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.scroll-container {
+  display: block;
+}
+
+/* background / foreground for scrollmap */
+.background-item {
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  position: sticky;
+  display: block;
+  top: 0;
+  margin-bottom: 20%;
+} 
+.background-item img {
+    display:inline-block;     /* so text-align:center works */
+    height:100%;              /* keep the tall map look */
+    width:auto;               /* lets the sides show yellow */
+}
+
+.foreground-item {
+  position: relative;
+  padding-bottom: 50%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* positioning helpers */
+.left,
+.right-inline {
+  display: inline-block;
+}
+
+.left {
+  vertical-align: top;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.full-width,
+.fit {
+  width: 100%;
+}
+
+.half-height {
+  height: 50%;
+}
+
+.full-height,
+.fill {
+  height: 100%;
+}
+
+/* title section full height */
+.title {
+  height: 100vh;
+}
+
+.title > * {
+  display: inline-block;
+}
+
+.title h1 {
+  font-size: 100px;
+}
+
+/* bottom margin styles */
+.row {
+  margin-bottom: 30%;
+}
+
+/* smaller bottom margin for rows in the foreground */
+.foreground-item > .row {
+  margin-bottom: 60%;
+}
+
+.no-margin {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+.lg-margin {
+  margin-bottom: 100% !important;
+}
+
+.md-margin {
+  margin-bottom: 50% !important;
+}
+
+.sm-margin {
+  margin-bottom: 25% !important;
+}
+
+/* block styles */
+.rounded {
+  border-radius: 2%;
+}
+
+.background-white {
+  background-color: white;
+  padding: 20px;
+}
+
+.background-transparent {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+/* credits section */
+.credits {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.credits > p {
+  margin-bottom: 5px;
+}
+
+/* interactions */
+.no-event {
+  pointer-events: none;
+}
+
+/* temp full screen map helpers */
+#map,
+#background-map,
+.full-screen {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* animation */
+.fade-in {
+  animation: in 2s;
+}
+
+@keyframes in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* slideshow */
+/* slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* hide the images by default */
+.slide {
+  display: none;
+}
+
+/* next and previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: calc(50% - 30px);
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* position next button to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* position prev button to the left */
+.prev {
+  left: 0;
+}
+
+/* hover styling for next/prev buttons */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+}
+
+.slide > img {
+  width: 100%;
+}
+
+/* image captions */
+.caption {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 0px;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  background: rgba(0,0,0,0.3);
+}
+
+/* the dots/bullets/indicators */
+.slideshow-dots {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 15px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Non scroll break section */
+.break-section {
+  margin: 8rem 0;
+  text-align: center;
+}
+
+.break-text {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 1.2rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Large screens */
+@media screen and (min-width: 1200px) {
+  .left {
+    flex: 0 0 auto;
+    margin-left: 8.33333333%;
+    width: 41.66666667% !important;
+  }
+
+  .right {
+    flex: 0 0 auto;
+    margin-left: 50%;
+    width: 41.66666667% !important;
+  }
+
+  .right-inline {
+    width: 41.66666667% !important;
+    margin-left: 20px;
+  }
+}
+
+/* Medium screens */
+@media screen and (min-width: 720px) and (max-width: 1199px) {
+  .left {
+    flex: 0 0 auto;
+    margin-left: 5%;
+    width: 45% !important;
+  }
+
+  .right {
+    flex: 0 0 auto;
+    margin-left: 50%;
+    width: 45% !important;
+  }
+
+  .right-inline {
+    flex: 0 0 auto;
+    margin-left: 20px;
+    width: 45% !important;
+  }
+
+  .center,
+  .center-wide {
+    max-width: 90%;
+  }
+}
+
+/* Small tablets */
+@media screen and (min-width: 540px) and (max-width: 719px) {
+  .center,
+  .center-wide {
+    flex: 0 0 auto;
+    margin-left: 8.33333333%;
+    width: 83.33333333% !important;
+  }
+
+  .left {
+    flex: 0 0 auto;
+    width: 48% !important;
+  }
+
+  .right {
+    flex: 0 0 auto;
+    margin-left: 50%;
+    width: 48% !important;
+  }
+
+  .right-inline {
+    flex: 0 0 auto;
+    width: 48% !important;
+    margin-left: 10px;
+  }
+}
+
+/* Phones */
+@media screen and (max-width: 539px) {
+  .center,
+  .center-wide {
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .left {
+    width: 100% !important;
+  }
+
+  .right {
+    width: 100% !important;
+    margin-left: 0;
+  }
+
+  .right-inline {
+    width: 100% !important;
+  }
+
+  .row {
+    margin-bottom: 50vh !important;
+  }
+
+  .foreground-item > .row {
+    margin-bottom: 100%;
+  }
+
+  /* move slideshow caption */
+  .caption {
+    top: 100%;
+    background: none;
+    color: black;
+  }
+
+  .vert-center {
+    margin-top: 0px !important;
+  }
+}
+/* Center the iframe section on the page */
+.iframe-row {
+    margin-bottom: 25%;
+}
+
+.iframe-wrapper {
+    max-width: 900px;
+    margin: 0 auto;       /* centers the block */
+    text-align: center;
+}
+
+/* Center the iframe itself */
+.moomin-iframe {
+    display: block;
+    margin: 0 auto;       /* centers inside wrapper */
+    width: 100%;
+    max-width: 700px;     /* same as iframe width */
+}
+/* Make main content a stacking context */
+.content {
+    position: relative;
+}
+
+/* Iframe section: make sure it sits on top and has space below scrollmap */
+.iframe-row {
+    margin-top: 4rem;      /* pushes it fully below the sticky map */
+    margin-bottom: 25%;
+    position: relative;
+    z-index: 10;           /* higher than the scrollmap backgrounds */
+}
